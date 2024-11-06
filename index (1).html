@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>EPS - EES Nº1 / CFP Nº405</title>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+
+<!-- type of matrix code - valid iif detectionMode end with 'matrix' - [3x3, 3x3_HAMMING63, 3x3_PARITY65, 4x4, 4x4_BCH_13_9_3, 4x4_BCH_13_5_5], matrixCodeType: '3x3' -->
+<a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3_PARITY65;'>
+
+ <a-assets>
+  <img id="tapa" src="tapa.png">
+   <img id="discusion" src="discusion.png">
+   <img id="bertita" src="bertita.png">
+   <img id="hijos" src="hijos.png">
+   <img id="gallinadegollada" src="gallinadegollada.png">
+   <img id="distraccion" src="distraccion.png">
+   <img id="lamiraban" src="lamiraban.png">
+   <img id="lasujetaron" src="lasujetaron.png">
+   <img id="tragedia" src="tragedia.png">
+   </a-assets>
+
+  
+<a-marker  type='barcode' value='0'>
+  <a-image src="#tapa" rotation="-90 0 0" width="3" height="3"></a-image>
+</a-marker>
+
+<a-marker  type='barcode' value='1'>
+  <a-image src="#discusion" rotation="-90 0 0" position="0 2 0" width="4" height="3.5"></a-image>
+</a-marker>
+
+<a-marker  type='barcode' value='2'>
+  <a-image src="#bertita" rotation="-90 0 0" position="0 2 0" width="4" height="4"></a-image>
+</a-marker>
+
+<a-marker  type='barcode' value='3'>
+  <a-image src="#hijos" rotation="-90 0 0" position="0 2 0" width="4" height="4"></a-image>
+</a-marker>
+
+<a-marker  type='barcode' value='4'>
+  <a-image src="#gallinadegollada" rotation="-80 0 0" position="0 2 0" width="4" height="4"></a-image>
+</a-marker>
+
+<a-marker  type='barcode' value='5'>
+  <a-image src="#distraccion" rotation="-90 0 0" position="0 2 0" width="4" height="4"></a-image>
+</a-marker>
+
+<a-marker  type='barcode' value='6'>
+  <a-image src="#lamiraban" rotation="-90 0 0" position="0 2 0" width="4" height="4"></a-image>
+</a-marker>
+
+<a-marker  type='barcode' value='7'>
+  <a-image src="#lasujetaron" rotation="-90 0 0" position="0 2 0" width="4" height="4"></a-image>
+</a-marker>
+
+<a-marker  type='barcode' value='8'>
+  <a-image src="#tragedia" rotation="-90 0 0" position="0 2 0" width="4" height="4"></a-image>
+</a-marker>
+
+<a-entity camera></a-entity>
+
+  </a-scene>
+</body>
+</html>
